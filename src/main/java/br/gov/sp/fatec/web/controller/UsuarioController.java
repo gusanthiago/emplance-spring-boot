@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,8 +23,9 @@ import com.fasterxml.jackson.annotation.JsonView;
 
 @RestController
 @RequestMapping(value = "/user")
+@CrossOrigin
 public class UsuarioController {
-	
+
 	@Autowired
 	private UsuarioService usuarioService;
 
@@ -40,13 +42,13 @@ public class UsuarioController {
 		}
 		return new ResponseEntity<Usuario>(usuario, HttpStatus.OK);
 	}
-	
+
 	@RequestMapping(value = "/getAll", method = RequestMethod.GET)
 	@JsonView(View.UsuarioResumoAlternativo.class)
 	public ResponseEntity<Collection<Usuario>> getAll() {
 		return new ResponseEntity<Collection<Usuario>>(usuarioService.todos(), HttpStatus.OK);
 	}
-	
+
 	@RequestMapping(value = "/save", method = RequestMethod.POST)
 	@JsonView(View.UsuarioCompleto.class)
 	public ResponseEntity<Usuario> save(@RequestBody Usuario usuario, UriComponentsBuilder uriComponentsBuilder) {
@@ -55,5 +57,5 @@ public class UsuarioController {
 		responseHeaders.setLocation(uriComponentsBuilder.path("/getById?id=" + usuario.getId()).build().toUri());
 		return new ResponseEntity<Usuario>(usuario, responseHeaders, HttpStatus.CREATED);
 	}
-	
+
 }

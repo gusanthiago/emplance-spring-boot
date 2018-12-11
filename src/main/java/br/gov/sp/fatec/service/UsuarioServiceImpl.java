@@ -45,7 +45,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 	}
 
 	@Override
-	@PreAuthorize("isAuthenticated()")
+	@PreAuthorize("hasRole('ROLE_ADMIN')")
 	public List<Usuario> todos() {
 		List<Usuario> retorno = new ArrayList<Usuario>();
 		for(Usuario usuario: usuarioRepo.findAll()) {
