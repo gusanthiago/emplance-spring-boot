@@ -15,4 +15,5 @@ Os seguintes usuários/senhas estão disponíveis para login:
 ## Project setup
 ```
 mvn install
+mvn sprint-boot:run
 ```
