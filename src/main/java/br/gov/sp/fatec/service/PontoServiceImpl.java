@@ -16,7 +16,7 @@ import br.gov.sp.fatec.model.Usuario;
 import br.gov.sp.fatec.repository.PontoRepository;
 import br.gov.sp.fatec.repository.UsuarioRepository;
 
-@Service("anotacaoService")
+@Service("pontoService")
 @Transactional
 public class PontoServiceImpl implements PontoService {
 

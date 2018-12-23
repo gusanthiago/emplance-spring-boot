@@ -1,13 +1,9 @@
 br/gov/sp/fatec/view/View$UsuarioResumo.class
 br/gov/sp/fatec/security/RestAuthenticationEntryPoint.class
 br/gov/sp/fatec/service/SegurancaServiceImpl.class
-br/gov/sp/fatec/service/AutorizacaoServiceImpl.class
 br/gov/sp/fatec/model/Autorizacao.class
-br/gov/sp/fatec/service/AutorizacaoService.class
-br/gov/sp/fatec/web/controller/AutorizacaoController.class
 br/gov/sp/fatec/view/View$UsuarioCompleto.class
 br/gov/sp/fatec/service/UsuarioServiceImpl.class
-br/gov/sp/fatec/service/AnotacaoServiceImpl.class
 br/gov/sp/fatec/model/Usuario.class
 br/gov/sp/fatec/security/Login.class
 br/gov/sp/fatec/repository/AutorizacaoRepository.class
@@ -18,10 +14,8 @@ br/gov/sp/fatec/view/View.class
 br/gov/sp/fatec/web/controller/UsuarioController.class
 br/gov/sp/fatec/view/View$UsuarioResumoAlternativo.class
 br/gov/sp/fatec/security/SecurityConfiguration.class
-br/gov/sp/fatec/web/controller/AnotacaoController.class
 br/gov/sp/fatec/security/JwtAuthenticationFilter.class
 br/gov/sp/fatec/security/JwtUtils.class
-br/gov/sp/fatec/service/AnotacaoService.class
 br/gov/sp/fatec/web/controller/HomeController.class
 br/gov/sp/fatec/SpringRestApplication.class
 br/gov/sp/fatec/service/UsuarioService.class
