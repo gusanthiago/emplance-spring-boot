@@ -1,16 +1,10 @@
-# spring-rest-security
+# Spring Application
 
-Projeto exemplo contendo uma API REST criada usando Spring Boot e Spring Data JPA. A autenticação/autorização é realizada pelo Spring Security e utiliza JWT.
+Project sample that have Spring Boot, Spring Data JPA and Spring Security Implementation. 
 
-## Banco de dados
+## Database
 
-Utilize o script MySQL contido no arquivo **MySQL_Script.sql** para criar e popular o Banco de Dados.
-
-## Usuários
-
-Os seguintes usuários/senhas estão disponíveis para login:
-* admin/admin
-* teste/teste
+Use script MySQL inside file **MySQL Script.sql** to create and populate database.
 
 ## Project setup
 ```
